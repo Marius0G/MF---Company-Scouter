@@ -5,13 +5,12 @@ from urllib.parse import urljoin
 from googlesearch import search
 
 def extract_contact_info(html):
-    # TO DO: optimize regex for phone and email ( .ro and .com for best results)
-    emails = re.findall(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", html)
+    # TODO: optimize regex for phone and email ( .ro and .com for best results)
+    emails = re.findall(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.(ro|com)", html)
     phones = re.findall(r"\+?\d[\d\s\-\(\)]{8,}\d", html)
     return set(emails), set(phones)
 
 def checkIfUrlNotSite(url):
-# check if site is not tazz.ro or reddit ( the sites will be in a file) (siteExceptionFile.cfg)
     siteExceptionFile = open("siteExceptionFile.cfg", "r")
     siteExceptions = siteExceptionFile.readlines()
     siteExceptionFile.close()
@@ -24,7 +23,11 @@ def checkIfUrlNotSite(url):
 query = "burgeri bucuresti" # TO DO: make it a command line argument
 results = search(query, num_results=100)
 
-# TO DO: make it so that it searches for subpages in subPages.cfg
+subpagesFile = open("subPages.cfg", "r")
+subpages = subpagesFile.readlines()
+for i in range(len(subpages)):
+    subpages[i] = subpages[i].strip()
+
 
 for url in results:
     if(checkIfUrlNotSite(url) == False):
@@ -38,13 +41,36 @@ for url in results:
             text = soup.get_text()
             emails, phones = extract_contact_info(text)
             if emails or phones:
-                print(f"✅ Found contact info at {url}")
+                print(f"\t✅ Found contact info at {url}")
                 if emails:
-                    print("  Emails:", ", ".join(emails))
+                    print("\t   Emails:", ", ".join(emails))
                 if phones:
-                    print("  Phones:", ", ".join(phones))
+                    print("\t   Phones:", ", ".join(phones))
             else:
-                print(f"❌ No contact info found at {url}")
+                print(f"\t❌ No contact info found at {url}")
     except Exception as e:
         print(f"❌ Error with {url}: {e}")
+    for subpage in subpages:
+        subpageUrl = url  + subpage
+        print(f"\t➤ Checking subpage: {subpageUrl}")
+        try:
+            headers = {'User-Agent': 'Mozilla/5.0'}
+            res = requests.get(subpageUrl, timeout=5, headers=headers)
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.text, 'html.parser')
+                text = soup.get_text()
+                emails, phones = extract_contact_info(text)
+                if emails or phones:
+                    print(f"\t✅ Found contact info at {subpageUrl}")
+                    if emails:
+                        print("\t     Emails:", ", ".join(emails))
+                    if phones:
+                        print("\t     Phones:", ", ".join(phones))
+                else:
+                    print(f"\t❌ No contact info found at {subpageUrl}")
+            else:
+                print(f"\t❌ Error with {subpageUrl}: Page doesn't exist")
+        except Exception as e:
+            print(f"\t❌ Error with {subpageUrl}: {e}")
+
 
