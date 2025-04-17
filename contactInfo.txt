@@ -1,40 +1,107 @@
-URL: https://dodopizza.ro/bucuresti?srsltid=AfmBOopQDD-YtTo3Zjnj4EzR7vIDepyYifoAWu7XcXGvRfXY4z416iyL
+URL: https://www.happypizza.ro/contact
 Emails:
-	feedback@dodopizza.ro
-	comenzifeedback@dodopizza.ro
-
-URL: https://dodopizza.ro/bucuresti?srsltid=AfmBOopQDD-YtTo3Zjnj4EzR7vIDepyYifoAWu7XcXGvRfXY4z416iyLabout
-Emails:
-	feedback@dodopizza.ro
-	comenzifeedback@dodopizza.ro
-
-URL: https://dodopizza.ro/bucuresti?srsltid=AfmBOopQDD-YtTo3Zjnj4EzR7vIDepyYifoAWu7XcXGvRfXY4z416iyLcontact
-Emails:
-	feedback@dodopizza.ro
-	comenzifeedback@dodopizza.ro
-
-URL: https://www.cuptorulculemne.com/contact
+	gloreya@admin.com
 Phones:
-	0728323985
+	0114592842
+	0741 229 977
 
-URL: https://www.gambinospizza.ro/contact
+URL: https://www.bubupizza.ro/
 Emails:
-	office@gambinospizza.ro
+	contact@bubupizza.ro
+	859contact@bubupizza.ro
+Phones:
+	0736 859 859
 
-URL: https://dodopizza.ro/bucuresti/dristor?srsltid=AfmBOorxDzECCmuyt58sKcK95DYSHJDkTn5MeM6Dca5F99eAvl7Q7YW8
+URL: https://www.bubupizza.ro/contact
 Emails:
-	feedback@dodopizza.ro
-	comenzifeedback@dodopizza.ro
+	contact@bubupizza.ro
+	859contact@bubupizza.ro
+Phones:
+	0736 859 859
 
-URL: https://dodopizza.ro/bucuresti/dristor?srsltid=AfmBOorxDzECCmuyt58sKcK95DYSHJDkTn5MeM6Dca5F99eAvl7Q7YW8about
-Emails:
-	feedback@dodopizza.ro
-	comenzifeedback@dodopizza.ro
+URL: https://www.pizzasanmarco.ro/
+Phones:
+	0241 585 888
 
-URL: https://dodopizza.ro/bucuresti/dristor?srsltid=AfmBOorxDzECCmuyt58sKcK95DYSHJDkTn5MeM6Dca5F99eAvl7Q7YW8contact
+URL: https://www.pizzasanmarco.ro/contact
+Phones:
+	0241 585 888
+
+URL: https://www.rispettorestaurant.ro/contact
 Emails:
-	feedback@dodopizza.ro
-	comenzifeedback@dodopizza.ro
+	rezervari@rispettorestaurant.ro
+Phones:
+	+40 711 900 933
+
+URL: https://restaurantmargineni.ro/meniu/
+Phones:
+	0739675662
+	0720679350
+
+URL: https://restaurantmargineni.ro/contact
+Phones:
+	0739675662
+	0720679350
+
+URL: https://www.mammamia.ro/contact
+Emails:
+	office@mammamia.ro
+Phones:
+	0762662642
+	0762 662 642
+
+URL: https://pizzato.ro/
+Phones:
+	0722 657 472
+
+URL: https://pizzato.ro/contact
+Emails:
+	office.oalatraditionala@gmail.com
+Phones:
+	0722 657 472
+
+URL: https://www.carucubere.ro/meniu/
+Emails:
+	office@citygrill.ro
+Phones:
+	0726 282 373
+
+URL: https://www.carucubere.ro/contact
+Emails:
+	rezervari@carucubere.ro
+	office@citygrill.ro
+Phones:
+	0726 282 373
+
+URL: https://spartan.ro/
+Phones:
+	0741950877
+
+URL: https://spartan.ro/contact
+Phones:
+	0741950877
+
+URL: https://www.bigbelly-cluj.ro/
+Emails:
+	contact@bigbelly-cluj.ro
+	comenzi@bigbelly-cluj.ro
+Phones:
+	0264 704 703
+	0754 234 235
+	0800 080 999
+	0757 435 063
+	0740 808 207
+
+URL: https://www.bigbelly-cluj.ro/contact
+Emails:
+	contact@bigbelly-cluj.ro
+	comenzi@bigbelly-cluj.ro
+Phones:
+	0264 704 703
+	0754 234 235
+	0800 080 999
+	0757 435 063
+	0740 808 207
 
 URL: https://www.pizza-della-casa.ro/contact
 Emails:
@@ -67,63 +134,10 @@ Phones:
 	0731 622 600
 	0724 622 600
 
-URL: https://www.bucuresteni.ro/info/restaurante_pizzerii_fastfood/with--pizzerii/
-Phones:
-	2564018699
-	0373303030
-	0755077070
-	0726000222
-	8935186982
-	8700382365
-	3758893337
-	0769316151
-	0733832277
-	0767227722
-	5875186971
-	0731707070
-
-URL: https://www.bucuresteni.ro/info/restaurante_pizzerii_fastfood/with--pizzerii/about
-Phones:
-	1869811118
-	0721065347
-	0373303030
-	0755077070
-	0748246246
-	8935362394
-	8902256941
-	0745525727
-	0729005599
-	0212116676
-	0757115277
-	0213300673
-	2375825457
-	0721542909
-	0731707070
-	0213306425
-
-URL: https://www.bucuresteni.ro/info/restaurante_pizzerii_fastfood/with--pizzerii/contact
-Phones:
-	1869811118
-	0721065347
-	0373303030
-	0755077070
-	0748246246
-	8935362394
-	8902256941
-	0745525727
-	0729005599
-	0212116676
-	0757115277
-	0213300673
-	2375825457
-	0721542909
-	0731707070
-	0213306425
-
 URL: https://www.ilcapricio.ro/
 Phones:
-	0799 746 538
 	0766 522 706
+	0799 746 538
 
 URL: https://www.ilpizzaiolo.ro/
 Emails:
@@ -153,20 +167,20 @@ Emails:
 
 URL: https://www.pizzeriailgrande.ro/
 Phones:
-	0731581447
 	0763544930
+	0731581447
 
 URL: https://www.pizzeriailgrande.ro/about
 Phones:
-	0731581447
 	0763544930
+	0731581447
 
 URL: https://www.pizzeriailgrande.ro/contact
 Emails:
 	contact@pizzeriailgrande.ro
 Phones:
-	0731581447
 	0763544930
+	0731581447
 
 URL: https://www.mammamiapizzeria.ro/
 Phones:
@@ -176,17 +190,7 @@ URL: https://www.mammamiapizzeria.ro/contact
 Phones:
 	+40 784 614 600
 
-URL: https://pizzarello.ro/produs/oferta-pizza-1xxl1-medie-gratis/?srsltid=AfmBOorGWkvE2CD302Yev7Pz4eFQXhS4dTAIE3UhT7eRv4ITOSl1ooki
-Phones:
-	0785 944 415
-	0727 565 033
-
-URL: https://pizzarello.ro/produs/oferta-pizza-1xxl1-medie-gratis/?srsltid=AfmBOorGWkvE2CD302Yev7Pz4eFQXhS4dTAIE3UhT7eRv4ITOSl1ookiabout
-Phones:
-	0785 944 415
-	0727 565 033
-
-URL: https://pizzarello.ro/produs/oferta-pizza-1xxl1-medie-gratis/?srsltid=AfmBOorGWkvE2CD302Yev7Pz4eFQXhS4dTAIE3UhT7eRv4ITOSl1ookicontact
+URL: https://pizzarello.ro/produs/oferta-pizza-1xxl1-medie-gratis/?srsltid=AfmBOooJ5SDi0yg42zSCqgyh60ZEuW78KaxgMWfGGbSdHy-vbmFOHxXZ
 Phones:
 	0785 944 415
 	0727 565 033
@@ -198,8 +202,8 @@ Phones:
 URL: https://kungfu-pizza.ro/contact
 Phones:
 	0774 428 631
-	0720 035 607
 	0748 291 795
+	0720 035 607
 
 URL: https://www.san-giorgio.ro/
 Phones:
@@ -216,16 +220,16 @@ Phones:
 
 URL: https://www.mytypizza.ro/contact
 Phones:
+	0744478578
 	0759399394
 	0734378358
-	0744478578
 
 URL: https://www.pizzafortuna.ro/
 Emails:
 	office@pizzafortuna.ro
 Phones:
-	0725 416 126
 	0764 725 328
+	0725 416 126
 
 URL: https://www.pizzicato.ro/contact
 Phones:
@@ -241,14 +245,10 @@ Emails:
 Phones:
 	0766 633 686
 
-URL: https://www.bloguluotrava.ro/10-locuri-unde-mananci-cea-mai-buna-pizza-din-bucuresti/contact
-Emails:
-	otrava@bloguluotrava.ro
-
 URL: https://www.pizzavenetia.ro/pizza
 Phones:
-	0734700500
 	0720 800 100
+	0734700500
 
 URL: https://pizzamania.ro/
 Emails:
@@ -268,13 +268,13 @@ Emails:
 Phones:
 	0733 342 545
 
-URL: https://www.ilpizzaiolo.ro/livrare-pizza-bucuresti-sector-2-3about
+URL: https://www.ilpizzaiolo.ro/about
 Emails:
 	contact@ilpizzaiolo.ro
 Phones:
 	0733 342 545
 
-URL: https://www.ilpizzaiolo.ro/livrare-pizza-bucuresti-sector-2-3contact
+URL: https://www.ilpizzaiolo.ro/contact
 Emails:
 	contact@ilpizzaiolo.ro
 Phones:
@@ -284,68 +284,71 @@ URL: https://www.pizzeria-volare.ro/meniu/
 Phones:
 	0730 622 600
 
-URL: https://www.pizzeria-volare.ro/meniu/contact
+URL: https://www.pizzeria-volare.ro/contact
 Phones:
 	0730 622 600
 	0731 622 600
 	0724 622 600
 
-URL: https://pizzarello.ro/?srsltid=AfmBOopJeS6i0qxgMFzjrXaDjFWX5vF-iADGUuaw1fUWk7n2BcBKNXE8
+URL: https://pizzarello.ro/?srsltid=AfmBOorm8JDQaOZIt1hr8oxrbiVHZ5OEiHA_dIRS4csfW9V3KJLCjIZr
 Phones:
 	0785 944 415
 	0727 565 033
 
-URL: https://pizzarello.ro/?srsltid=AfmBOopJeS6i0qxgMFzjrXaDjFWX5vF-iADGUuaw1fUWk7n2BcBKNXE8about
+URL: https://pizzarello.ro/contact?srsltid=AfmBOorm8JDQaOZIt1hr8oxrbiVHZ5OEiHA_dIRS4csfW9V3KJLCjIZr
 Phones:
 	0785 944 415
 	0727 565 033
 
-URL: https://pizzarello.ro/?srsltid=AfmBOopJeS6i0qxgMFzjrXaDjFWX5vF-iADGUuaw1fUWk7n2BcBKNXE8contact
-Phones:
-	0785 944 415
-	0727 565 033
+URL: https://www.stiripesurse.ro/contact
+Emails:
+	redactie@stiripesurse.ro
 
 URL: https://velocepizza.ro/
 Phones:
+	0771 780 417
 	0771 780 225
 	0771780417
-	0771 780 417
 
 URL: https://velocepizza.ro/contact
 Phones:
-	0771 780 225
-	0771780417
 	0771 780 417
 	0771780225
+	0771 780 225
+	0771780417
+
+URL: https://www.gambinospizza.ro/contact
+Emails:
+	office@gambinospizza.ro
 
 URL: https://www.bronzaniada.ro/top-pizzerii-bucuresti/
 Phones:
+	0731 333 410
+	0755 028 448
 	0730 622 600
-	0786 774 992
 	0747 220 088
 	0747 317 760
-	0755 028 448
+	0786 774 992
 	0757 090 933
-	0731 333 410
 
 URL: https://www.happypizza.ro/contact
 Emails:
 	gloreya@admin.com
 Phones:
-	0741 229 977
 	0114592842
+	0741 229 977
 
 URL: https://www.bubupizza.ro/
 Emails:
-	859contact@bubupizza.ro
 	contact@bubupizza.ro
+	859contact@bubupizza.ro
 Phones:
 	0736 859 859
 
 URL: https://www.bubupizza.ro/contact
 Emails:
-	859contact@bubupizza.ro
 	contact@bubupizza.ro
+	859contact@bubupizza.ro
 Phones:
 	0736 859 859
 
@@ -357,22 +360,18 @@ URL: https://www.pizzasanmarco.ro/contact
 Phones:
 	0241 585 888
 
-URL: https://www.rispettorestaurant.ro/unde-mancam-cea-mai-buna-pizza-din-bucuresti/contact
+URL: https://www.rispettorestaurant.ro/contact
 Emails:
 	rezervari@rispettorestaurant.ro
 Phones:
 	+40 711 900 933
-
-URL: https://bookingham.ro/bucuresti/restaurante/tag/pizza
-Emails:
-	contact@bookingham.ro
 
 URL: https://restaurantmargineni.ro/meniu/
 Phones:
 	0739675662
 	0720679350
 
-URL: https://restaurantmargineni.ro/meniu/contact
+URL: https://restaurantmargineni.ro/contact
 Phones:
 	0739675662
 	0720679350
@@ -400,7 +399,7 @@ Emails:
 Phones:
 	0726 282 373
 
-URL: https://www.carucubere.ro/meniu/contact
+URL: https://www.carucubere.ro/contact
 Emails:
 	rezervari@carucubere.ro
 	office@citygrill.ro
@@ -417,23 +416,45 @@ Phones:
 
 URL: https://www.bigbelly-cluj.ro/
 Emails:
-	comenzi@bigbelly-cluj.ro
 	contact@bigbelly-cluj.ro
+	comenzi@bigbelly-cluj.ro
 Phones:
-	0757 435 063
-	0800 080 999
 	0264 704 703
-	0740 808 207
 	0754 234 235
+	0800 080 999
+	0757 435 063
+	0740 808 207
 
 URL: https://www.bigbelly-cluj.ro/contact
 Emails:
-	comenzi@bigbelly-cluj.ro
 	contact@bigbelly-cluj.ro
+	comenzi@bigbelly-cluj.ro
 Phones:
-	0757 435 063
-	0800 080 999
 	0264 704 703
-	0740 808 207
 	0754 234 235
+	0800 080 999
+	0757 435 063
+	0740 808 207
+
+URL: https://www.google.com/contact?num=100
+Emails:
+	press@google.com
+
+URL: https://la-grecu.ro/
+Phones:
+	0239 629 999
+	0755 629 999
+
+URL: https://la-grecu.ro/contact
+Phones:
+	0239 629 999
+	0755 629 999
+
+URL: https://www.pizza5colturi.ro/
+Phones:
+	0257 273 273
+
+URL: https://www.pizza5colturi.ro/contact
+Phones:
+	0257 273 273
 
