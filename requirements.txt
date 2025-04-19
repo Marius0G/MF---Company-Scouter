@@ -3,3 +3,5 @@ requests
 googlesearch-python
 selenium
 webdriver-manager
+gspread
+google-auth

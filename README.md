@@ -25,3 +25,6 @@ Install the required packages with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Make sure you download the google cloud service account json file, then specify it in googleJsonFilePath.cfg

@@ -8,12 +8,39 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+import gspread
+from google.oauth2.service_account import Credentials
 
+query = "paste bucuresti" # TODO: make it a command line argument
 lookupSize = 200
 
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
+          'https://www.googleapis.com/auth/drive']
+
+# Google Sheets API setup
+with open("googleJsonFilePath.cfg", "r") as jsonFile:
+    jsonFilePath = jsonFile.read().strip()
+    jsonFile.close()
+creds = Credentials.from_service_account_file(
+    jsonFilePath,
+    scopes=SCOPES)
+client = gspread.authorize(creds)
+with open("sheetName.cfg", "r") as sheetIdFile:
+    sheetName = sheetIdFile.read().strip()
+    sheetIdFile.close()
+sheet = client.open(sheetName).sheet1
+
+
+visited_urls = set()
+try:
+    with open("visited.txt", "r") as f:
+        for line in f:
+            visited_urls.add(line.strip())
+except FileNotFoundError:
+    pass
+
 def saveInfoToFile(filename,emails, phones, url):
-    with open(filename, 'a') as file:
+    with open(filename, 'w') as file:
         file.write(f"URL: {url}\n")
         if emails:
             file.write("Emails:\n")
@@ -24,6 +51,15 @@ def saveInfoToFile(filename,emails, phones, url):
             for phone in phones:
                 file.write(f"\t{phone}\n")
         file.write("\n")
+
+def saveInfoToSheet(emails, phones, url):
+    # Check if the sheet is empty
+    if sheet.cell(1, 1).value is None:
+        print("Sheet is empty, adding headers...")
+        sheet.append_row(["URL", "Emails", "Phones"])
+
+    # Append the data to the sheet
+    sheet.append_row([url, "\n".join(emails), "\n".join(phones)])
 
 
 def search_with_brave(query):
@@ -67,8 +103,6 @@ def checkIfUrlNotSite(url):
             return False
     return True
 
-query = "pizza bucuresti" # TODO: make it a command line argument
-
 try:
     results = search(query, num_results=lookupSize,sleep_interval=random.uniform(5, 15))
 except Exception as e:
@@ -99,6 +133,11 @@ def makeSubpageUrl(url, subpage):
     return urlunparse(new_parsed)
 
 for url in results:
+    if url in visited_urls:
+        continue
+    visited_urls.add(url)
+    emails_per_url = set()
+    phones_per_url = set()
     if(checkIfUrlNotSite(url) == False):
         continue
     print(f"🔍 Checking: {url}")
@@ -110,7 +149,10 @@ for url in results:
             text = soup.get_text()
             emails, phones = extract_contact_info(text)
             if emails or phones:
-                saveInfoToFile("contactInfo.txt", emails, phones, url)
+                # saveInfoToFile("contactInfo.txt", emails, phones, url)
+                # saveInfoToSheet(emails, phones, url)
+                emails_per_url.update(emails)
+                phones_per_url.update(phones)
                 print(f"\t✅ Found contact info at {url}")
                 if emails:
                     print("\t   Emails:", ", ".join(emails))
@@ -125,7 +167,9 @@ for url in results:
     #TODO: Subpages sa fie set cu url-ul, sa nu fie informatii duplicate
     for subpage in subpages:
         subpageUrl = makeSubpageUrl(url, subpage.strip())
-        print(subpageUrl)
+        if subpageUrl in visited_urls:
+            continue
+        visited_urls.add(subpageUrl)
         print(f"\t➤ Checking subpage: {subpageUrl}")
         try:
             headers = {'User-Agent': 'Mozilla/5.0'}
@@ -135,7 +179,10 @@ for url in results:
                 text = soup.get_text()
                 emails, phones = extract_contact_info(text)
                 if emails or phones:
-                    saveInfoToFile("contactInfo.txt", emails, phones, subpageUrl)
+                    # saveInfoToFile("contactInfo.txt", emails, phones, subpageUrl)
+                    # saveInfoToSheet(emails, phones, subpageUrl)
+                    emails_per_url.update(emails)
+                    phones_per_url.update(phones)
                     print(f"\t✅ Found contact info at {subpageUrl}")
                     if emails:
                         print("\t     Emails:", ", ".join(emails))
@@ -147,5 +194,15 @@ for url in results:
                 print(f"\t❌ Error with {subpageUrl}: Page doesn't exist")
         except Exception as e:
             print(f"\t❌ Error with {subpageUrl}: {e}")
+    if emails_per_url or phones_per_url:
 
+        saveInfoToFile("contactInfo.txt", emails_per_url, phones_per_url, url)
+        saveInfoToSheet(emails_per_url, phones_per_url, url)
+    emails_per_url.clear()
+    phones_per_url.clear()
+print("✅ Finished checking all URLs.")
+
+with open("visited.txt", "w") as f:
+    for url in visited_urls:
+        f.write(url + "\n")
 
