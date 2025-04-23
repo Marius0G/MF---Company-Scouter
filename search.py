@@ -11,9 +11,9 @@ from selenium.webdriver.chrome.options import Options
 import gspread
 from google.oauth2.service_account import Credentials
 
-query = "paste bucuresti" # TODO: make it a command line argument
+query = "restaurant mexican bucuresti" # TODO: make it a command line argument
 lookupSize = 200
-
+# TODO: Tutorial in readme so it is clear for usage
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
           'https://www.googleapis.com/auth/drive']
 
@@ -202,7 +202,7 @@ for url in results:
     phones_per_url.clear()
 print("✅ Finished checking all URLs.")
 
-with open("visited.txt", "w") as f:
+with open("visited.txt", "a") as f:
     for url in visited_urls:
         f.write(url + "\n")
 
