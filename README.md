@@ -33,9 +33,9 @@ pip install -r requirements.txt
 
 ### 1. Clone/download this repo.
 ### 2. Install dependencies:
-    ```bash
+  ```bash
     pip install -r requirements.txt
-    ```
+  ```
 ### 3. Google Cloud Service Account Setup
 
 To allow writing to Google Sheets:
