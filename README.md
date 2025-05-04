@@ -80,7 +80,7 @@ Go to **APIs & Services > Library** and enable:
 Run the script from terminal:
 
 ```bash
-python main.py
+python search.py
 ```
 
 The query to be searched is hardcoded in the script as of now:
