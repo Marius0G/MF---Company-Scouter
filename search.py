@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.options import Options
 import gspread
 from google.oauth2.service_account import Credentials
 
-query = "restaurant mexican bucuresti" # TODO: make it a command line argument
+query = "apa imbuteliata" # TODO: make it a command line argument
 lookupSize = 200
 # TODO: Tutorial in readme so it is clear for usage
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
