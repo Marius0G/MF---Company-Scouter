@@ -6,3 +6,4 @@ google-auth-oauthlib
 google-auth-httplib2
 googlesearch-python
 selenium
+oauth2client
