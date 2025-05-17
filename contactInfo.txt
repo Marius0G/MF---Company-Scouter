@@ -1,6 +1,5 @@
-URL: https://yandex.ru/maps/org/33528524969/
-Phones:
-	1747482708
-	6591114964
-	6591114988
+URL: https://www.mesopotamia.ro/
+Emails:
+	marketing@mesopotamia.ro
+	office@mesopotamia.ro
 

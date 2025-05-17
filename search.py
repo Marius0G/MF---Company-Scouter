@@ -158,8 +158,7 @@ def run_script():
         results = search(query, num_results=lookupSize,sleep_interval=random.uniform(5, 15))
     except Exception as e:
         results = search_with_brave(query) # Optional, in caz de rate limitation pe google
-
-    total_urls = len(list(results))
+    total_urls = lookupSize
     completed = 0
 
     subpagesFile = open("subPages.cfg", "r")
@@ -210,11 +209,10 @@ def run_script():
                     emails_per_url.update(emails)
                     phones_per_url.update(phones)
                     log(f"\t✅ Found contact info at {url}")
-                    output_text.insert(tk.END, r + "\n")
                     if emails:
-                        log("\t   Emails:", ", ".join(emails))
+                        log("\t   Emails:"+ ", ".join(emails))
                     if phones:
-                        log("\t   Phones:", ", ".join(phones))
+                        log("\t   Phones:"+ ", ".join(phones))
                         
                 else:
                     log(f"\t❌ No contact info found at {url}")
@@ -242,9 +240,9 @@ def run_script():
                         phones_per_url.update(phones)
                         log(f"\t✅ Found contact info at {subpageUrl}")
                         if emails:
-                            log("\t     Emails:", ", ".join(emails))
+                            log("\t     Emails:"+ ", ".join(emails))
                         if phones:
-                            log("\t   Phones:", ", ".join(phones))
+                            log("\t   Phones:"+ ", ".join(phones))
                     else:
                         log(f"\t❌ No contact info found at {subpageUrl}")
                 else:
