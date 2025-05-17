@@ -20,7 +20,8 @@ def select_credentials_file():
     cred_path_var.set(file_path)
 
 # query = "pizza bucuresti" # TODO: make it a command line argument
-lookupSize = 200
+
+
 # TODO: Tutorial in readme so it is clear for usage
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
           'https://www.googleapis.com/auth/drive']
@@ -140,7 +141,7 @@ def checkIfUrlNotSite(url):
 
 # Function to run the script
 def run_script():
-    
+    lookupSize = int(lookup_var.get())
     output_text.delete(1.0, tk.END)
     global sheet
     sheet = setup_google_sheets()  # Setup Google Sheets
@@ -279,6 +280,12 @@ tk.Entry(root, textvariable=sheet_name_var, width=60).pack()
 
 tk.Label(root, text="Search Query:").pack()
 tk.Entry(root, textvariable=query_var, width=60).pack()
+
+lookup_label = tk.Label(root, text="Google Lookup Size:")
+lookup_label.pack()
+lookup_var = tk.StringVar(value="50")  # default value
+lookup_dropdown = ttk.Combobox(root, textvariable=lookup_var, values=["20", "50", "100", "200", "400"], state="readonly")
+lookup_dropdown.pack(pady=5)
 
 progress_var = tk.DoubleVar()
 progress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)
